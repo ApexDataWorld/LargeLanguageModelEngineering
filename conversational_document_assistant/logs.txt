@@ -1,0 +1,60 @@
+python -m venv transformers_env
+source transformers_env/bin/activate  # On Linux/Mac
+pip install -r requirements.txt
+pip install langchain-community
+pip install -U langchain-huggingface
+pip install tensorflow==2.16.1
+pip install sentence-transformers
+pip install langchain-huggingface
+streamlit run main.py         
+
+------------------------------------------
+
+pip uninstall keras tensorflow -y
+pip install --upgrade transformers sentence-transformers torch
+
+conda deactivate
+source doc_assist/bin/activate  
+python document_processor.py
+
+------------------------------------------
+
+rm -rf ~/.cache/torch_extensions/
+rm -rf ~/.torch/
+
+conda deactivate
+source doc_assist/bin/activate  
+
+
+pip install langchain-openai
+pip install --upgrade openai langchain
+pip install openai==0.28
+
+------------------------------------------
+
+
+(doc_assist) (base) xxxxxxx@mac src % pipdeptree --freeze | grep -E '^\S'
+
+astunparse==1.6.3
+faiss-cpu==1.9.0.post1
+flatbuffers==25.1.24
+gast==0.6.0
+google-pasta==0.2.0
+h5py==3.12.1
+langchain-community==0.3.16
+langchain-huggingface==0.1.2
+langchain-openai==0.3.2
+libclang==18.1.1
+ml-dtypes==0.3.2
+namex==0.0.8
+opt_einsum==3.4.0
+optree==0.14.0
+pipdeptree==2.25.0
+streamlit==1.41.1
+tensorboard==2.16.2
+termcolor==2.5.0
+torchaudio==2.5.1
+torchvision==0.20.1
+watchdog==6.0.0
+wrapt==1.17.2
+(doc_assist) (base) xxxxxxx@mac src % 
